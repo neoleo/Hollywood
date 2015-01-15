@@ -1,12 +1,10 @@
 package com.example;
 import com.example.domain.*;
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ActorTest {
     
     public static void main(String... args) {
-        ArrayList<Actor> aa = new ArrayList<>();
         Actor[] actors = 
             {  new Actor(101, "Sean", "Astin"),
                new Actor(102, "Martin", "Freeman"),

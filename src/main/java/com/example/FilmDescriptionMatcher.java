@@ -48,7 +48,7 @@ public class FilmDescriptionMatcher {
         expressions[0] = "PUMP is an eye-opening documentary that tells the story of America's addiction to oil (and gas)";
         expressions[1] = "  from its corporate conspiracy beginnings to its current monopoly today));";
         expressions[2] = " and explains clearly and simply how we can end it (or not)";
-        expressions[3] = " Rated PG for mild thematic material)";
+        expressions[3] = " (Rated PG for mild thematic material)";
 
         pm.processArray(expressions);
     }

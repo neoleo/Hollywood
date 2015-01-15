@@ -14,7 +14,7 @@ public class ActorPosterCounter {
     }
 
     public void processList(String[] list) {
-        long curVal = 0;
+        long curVal;
         for (String itemNumber : list) {
             if (postersCountMap.containsKey(itemNumber)) {
                 curVal = postersCountMap.get(itemNumber);
@@ -36,7 +36,9 @@ public class ActorPosterCounter {
     }
 
     public static void main(String[] args) {
-        String[] posters = new String[]{"1S01", "1S01", "1S01", "1S01", "1S01", "1S02", "1S02", "1S02", "1H01", "1H01", "1S02", "1S01", "1S01", "1H01", "1H01", "1H01", "1S02", "1S02", "1M02", "1M02", "1M02"};
+        String[] posters = new String[]{"1S01", "1S01", "1S01", "1S01", "1S01",
+                "1S02", "1S02", "1S02", "1H01", "1H01", "1S02", "1S01", "1S01",
+                "1H01", "1H01", "1H01", "1S02", "1S02", "1M02", "1M02", "1M02"};
 
         // Create Actor Name Poster Number map
         Map<String, String> posterActorNames = new TreeMap<>();
