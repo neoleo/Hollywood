@@ -6,6 +6,7 @@ import java.util.Arrays;
 public class ActorTest {
     
     public static void main(String... args) {
+        int x = 0;
         ArrayList<Actor> aa = new ArrayList<>();
         Actor[] actors = 
             {  new Actor(101, "Sean", "Astin"),
