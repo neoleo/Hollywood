@@ -36,7 +36,7 @@ public class FilmScriptSearch {
         FilmScriptSearch scan = new FilmScriptSearch();
         try (BufferedReader in
                 = new BufferedReader(new InputStreamReader(System.in))) {
-            String search = "";
+            String search;
             System.out.println("Searching through the file: " + file);
             while (true) {
                 System.out.print("Enter the search string or q to exit: ");
