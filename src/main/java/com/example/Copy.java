@@ -1,9 +1,8 @@
 package com.example;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.nio.file.*;
+import com.example.business.*;
 
 public class Copy {
 
@@ -59,7 +58,7 @@ public class Copy {
         // 
         CopyFileTree cft = new CopyFileTree(source, target);
         try {
-            Files.walkFileTree(source, cft);
+            Files.walkFileTree(source, (FileVisitor<? super Path>) cft);
         } catch (IOException e) {
             error("WalkFileTree Exception: " + e);
         }
