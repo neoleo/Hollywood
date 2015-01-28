@@ -7,16 +7,16 @@ public class NewClass {
         } catch (NumberFormatException e) {
             System.out.println("NFE Caught");
         }
-        catch (Exception e) {
-            System.out.println("E Caught");
-        }
+        System.out.println("The End");
     }
     
-    static void f() throws Exception {
+    static int f() {
         try {
-            throw new NumberFormatException();
-        } catch(Exception e) {
+            throw new Exception();
+        } catch(NumberFormatException e) {
             throw e;
+        } finally {
+            return 0;
         }
     }
 }
